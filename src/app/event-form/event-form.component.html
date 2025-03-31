@@ -1,0 +1,10 @@
+<div class="event-form-container">
+    <h1>{{ isEditMode ? 'Edit Event' : 'Create Event' }}</h1>
+    <form (ngSubmit)="onSubmit()">
+      <input [(ngModel)]="event.title" name="title" placeholder="Title" required />
+      <textarea [(ngModel)]="event.description" name="description" placeholder="Description" required></textarea>
+      <input [(ngModel)]="event.date" name="date" type="date" placeholder="Date" required />
+      <input [(ngModel)]="event.location" name="location" placeholder="Location" required />
+      <button type="submit">{{ isEditMode ? 'Update' : 'Create' }}</button>
+    </form>
+  </div>

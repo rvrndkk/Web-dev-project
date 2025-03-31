@@ -1,0 +1,17 @@
+<div class="events-container">
+    <h1>Events</h1>
+    <button *ngIf="isAuthenticated" (click)="navigateToCreateEvent()">Create Event</button>
+  
+    <div class="search-bar">
+      <input [(ngModel)]="searchQuery" placeholder="Search events..." />
+    </div>
+  
+    <div *ngFor="let event of filteredEvents" class="event-card">
+      <h2>{{ event.title }}</h2>
+      <p>{{ event.description }}</p>
+      <p><strong>Date:</strong> {{ event.date }}</p>
+      <p><strong>Location:</strong> {{ event.location }}</p>
+      <button (click)="viewEventDetails(event.id)">View Details</button>
+      <button *ngIf="isAuthenticated" (click)="registerForEvent(event.id)">Register</button>
+    </div>
+  </div>

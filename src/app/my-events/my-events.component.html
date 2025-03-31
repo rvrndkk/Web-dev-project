@@ -1,0 +1,10 @@
+<div class="my-events-container">
+    <h1>My Events</h1>
+    <div *ngFor="let event of events" class="event-card">
+      <h2>{{ event.title }}</h2>
+      <p>{{ event.description }}</p>
+      <p><strong>Date:</strong> {{ event.date }}</p>
+      <p><strong>Location:</strong> {{ event.location }}</p>
+      <button (click)="viewEventDetails(event.id)">View Details</button>
+    </div>
+  </div>

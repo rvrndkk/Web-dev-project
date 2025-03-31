@@ -1,0 +1,30 @@
+/* AppComponent Styles */
+.app-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  nav {
+    margin-bottom: 20px;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    font-size: 18px;
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #2980b9;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }

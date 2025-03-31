@@ -1,0 +1,16 @@
+<div class="login-container">
+    <h1>Login</h1>
+    <form (ngSubmit)="onLogin()">
+      <input [(ngModel)]="email" name="email" placeholder="Email" required />
+      <input [(ngModel)]="password" name="password" type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  
+    <h1>Register</h1>
+    <form (ngSubmit)="onRegister()">
+      <input [(ngModel)]="registerName" name="name" placeholder="Name" required />
+      <input [(ngModel)]="registerEmail" name="email" placeholder="Email" required />
+      <input [(ngModel)]="registerPassword" name="password" type="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+  </div>
