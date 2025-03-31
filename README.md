@@ -1,24 +1,6 @@
 # Web-dev-project
 Event Planner is a web application which been built with Angular front-end and Django back-end frameworks. It allows users to manage events, register for events, and view event details. Among main features: JWT-based authentication, routing, and a clean, responsive user interface.
 
-Project Structure
-src/
-├── app/
-│   ├── events/                  # Events component
-│   ├── event-details/           # Event details component
-│   ├── event-form/              # Event form component (create/edit)
-│   ├── login/                   # Login and registration component
-│   ├── my-events/               # My Events component
-│   ├── models/                  # TypeScript interfaces
-│   ├── services/                # Angular services
-│   ├── interceptors/            # HTTP interceptors
-│   ├── app.routes.ts            # Application routes
-│   └── app.component.ts         # Root component
-├── assets/                      # Static assets
-├── styles.css                   # Global styles
-└── main.ts                      # Application bootstrap
-
-
 
 Usage
 1. Home Page (/events)
